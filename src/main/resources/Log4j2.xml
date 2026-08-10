@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss} [%-5level] %c{1} - %msg%n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>
+
+<!--        %d{HH:mm:ss} │ Timestamp — 14:30:05
+            %-5level     │ Log level — INFO, ERROR, WARN
+            %c{1}        │ Class name — TestListener
+            %msg         │ Your actual message               -->

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="ZuduAI Test Suite" verbose="1" parallel="methods" thread-count="2">
+
+    <listeners>
+        <listener class-name="ai.zudu.TestListener"/>
+    </listeners>
+
+    <test name="Smoke Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="ai.zudu.LoginTest"/>
+        </classes>
+    </test>
+
+</suite>
