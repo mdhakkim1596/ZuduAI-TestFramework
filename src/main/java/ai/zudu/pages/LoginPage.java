@@ -11,7 +11,7 @@ public class LoginPage extends BasePage {
     }
 
     // 2. Locators
-    private final By emailInputLocator = By.xpath("//input[contains(@placeholder,'Email')]");
+    private final By emailInputLocator = By.xpath("//input[contains(@placeholder,'Email_1')]");
     private final By continueButtonLocator = By.xpath("//button[contains(@type,'submit')]");
 
     // 3. Action methods
